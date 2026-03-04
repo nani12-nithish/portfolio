@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chamarthi nithish | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h2 {
+            color: orange;
+            text-align: center;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            background: rgb(255, 255, 255);
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-left img {
+            width: 150px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: orange;
+        }
+
+        footer {
+            background: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .foot h4 {
+            padding-bottom: 10px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .logo a img {
+            width: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .logo a img:hover {
+            transform: scale(1.2);
+        }
+
+        main {
+            margin-top: 100px;
+            padding-top: 20px;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .project-item {
+            padding: 20px;
+            box-shadow: 3px 3px 3px lightblue;
+            background: #f9f9f9;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 50%;
+            
+        }
+
+        .project-item p {
+            padding-bottom: 8px;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 10px lightblue;
+        }
+
+        .project-item img {
+            height: 200px;
+            width: 200px;
+            border-radius: 5px;
+            max-width: 100%;
+        }
+
+        #cal {
+            width: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-left img {
+                width: 120px;
+            }
+
+            .nav-right {
+                margin-top: 10px;
+            }
+
+            .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            main{
+                padding: 40px 20px 20px;
+            }
+            .project-item{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="portfoilio.png" alt="Portfolio Logo">
+            </div>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="skill.html">Skills</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <nav class="project" id="project">
+                <h2>My Projects</h2><br>
+                <div class="projects-container">
+                    <div class="project-item">
+                        <p><strong>Project 1</strong></p>
+                        <p>Number Guessing Game</p>
+                        <a href="https://nani12-nithish.github.io/project1/" target="_blank">
+                            <img src="num game.jpg" class="proimg" alt="Number Guessing Game project">
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <p><strong>Project 2</strong></p>
+                        <p>Simple Calculator</p>
+                        <a href="https://nani12-nithish.github.io/project2/" target="_blank">
+                            <img src="cal.png" alt="Simple Calculator" id="cal">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <p>Currently, I am working on a Java-based project for Semester 2.</p>
+            </nav>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="foot">
+            <div class="title">
+                <h4>Stay connected with me:</h4>
+            </div>
+            <div class="logo">
+                <a href="https://github.com/nani12-nithish/nani12-nithish">
+                    <img src="github.png" alt="GitHub">
+                </a>
+                <a href="https://www.instagram.com/nithish_chamarthi/#">
+                    <img src="insta.jpeg" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/nithish-chamarthi-5b9739334/">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.hackerrank.com/profile/am_sc_u4aid24008">
+                    <img src="hackerrank.png" alt="HackerRank">
+                </a>
+            </div>
+            <p>© 2025 My Portfolio</p>
+        </nav>
+    </footer>
+</body>
+
+</html>

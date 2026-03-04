@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chamarthi nithish | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+
+        h2 {
+            color: orange;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            background: white;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-left img {
+            width: 150px;
+        }
+
+        .nav-right a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: orange;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .me img {
+            width: 250px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px lightblue;
+            transition: transform 0.3s;
+        }
+
+        .me img:hover {
+            transform: scale(1.05);
+        }
+
+        .basic {
+            max-width: 400px;
+        }
+
+        .basic h1 {
+            font-size: 36px;
+            padding-bottom: 10px;
+        }
+
+        .basic strong {
+            color: orange;
+        }
+
+        .basic h3 {
+            padding-bottom: 12px;
+            font-weight: normal;
+        }
+
+        .basic p {
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .basic button {
+            border: none;
+            border-radius: 25px;
+            padding: 12px 20px;
+            background-color: orange;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .basic button:hover {
+            background-color: white;
+            transform: scale(1.05);
+            border: 1px solid orange;
+        }
+
+        .basic a {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer {
+            background: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: auto;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .foot h4 {
+            padding-bottom: 10px;
+        }
+
+        .foot p {
+            padding-top: 10px;
+            font-size: 14px;
+        }
+
+        .logo {
+            padding: 10px 0;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo a img {
+            width: 30px;
+            margin: 0 10px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .logo a img:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-left img {
+                width: 120px;
+            }
+
+            .nav-right {
+                margin-top: 10px;
+            }
+
+            body {
+                padding-top: 130px;
+            }
+
+            .intro {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .me img {
+                width: 200px;
+            }
+
+            .basic h1 {
+                font-size: 30px;
+            }
+
+            .basic p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="portfoilio.png" alt="Logo" />
+            </div>
+            <div class="nav-right">
+                <a href="about.html">About Me</a>
+                <a href="skill.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="me">
+                <img src="me.jpg" alt="Profile Picture" />
+            </div>
+            <div class="basic">
+                <h1>Hello! This is <br /><strong>Nitish</strong></h1>
+                <h3>A Bit about me</h3>
+                <p>I am currently a UG student at Amrita University.</p>
+                <p>
+                    I am a passionate Computer Science Engineering student with a strong
+                    foundation in programming, algorithms, and software development.
+                </p>
+                <button><a href="RESUME.pdf" target="_blank">Resume</a></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <h4>Stay connected with me:</h4>
+        <div class="logo">
+            <a href="https://github.com/nani12-nithish/nani12-nithish">
+                <img src="github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.instagram.com/nithish_chamarthi/#">
+                <img src="insta.jpeg" alt="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com/in/nithish-chamarthi-5b9739334/">
+                <img src="linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://www.hackerrank.com/profile/am_sc_u4aid24008">
+                <img src="hackerrank.png" alt="HackerRank" />
+            </a>
+        </div>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+
+</html>
